@@ -9,7 +9,6 @@ import { FooterComponent } from './components/template/footer/footer.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
-import { TableComponent } from './components/table/table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
@@ -18,8 +17,7 @@ import { MatSortModule } from '@angular/material/sort';
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
-    TableComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
