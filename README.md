@@ -11,13 +11,15 @@ ng new angular-samples
 ```javascript
 ng add @angular/material
 ```
-## Step 03 - Building
+## Step 03 - Add Component Header
 
 ```javascript
+ng generate component components/header
 ```
-## Step 04 - Building 
+## Step 04 - Add Component Footer 
 
 ```javascript
+ng generate component components/footer
 ```
 ## Step 05 - Building
 
