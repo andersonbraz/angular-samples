@@ -3,27 +3,27 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
 ## Step 01 - Start Project
 
-```javascript
+```shell
 ng new angular-samples
 ```
 ## Step 02 - Adding Theme
 
-```javascript
+```shell
 ng add @angular/material
 ```
 ## Step 03 - Add Component Header
 
-```javascript
+```shell
 ng generate component components/header
 ```
 ## Step 04 - Add Component Footer 
 
-```javascript
+```shell
 ng generate component components/footer
 ```
 ## Step 05 - Building
 
-```javascript
+```shell
 ```
 
 ## References
