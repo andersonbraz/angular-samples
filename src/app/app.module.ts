@@ -13,6 +13,7 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { TypographyComponent } from './components/sample/typography/typography.component';
 import { ButtonComponent } from './components/sample/button/button.component';
+import { IconComponent } from './components/sample/icon/icon.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ButtonComponent } from './components/sample/button/button.component';
     HeaderComponent,
     FooterComponent,
     TypographyComponent,
-    ButtonComponent
+    ButtonComponent,
+    IconComponent
   ],
   imports: [
     BrowserModule,
