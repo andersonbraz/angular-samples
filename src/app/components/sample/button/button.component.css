@@ -1,0 +1,11 @@
+.content {
+  padding: 100px 10px 100px 10px;
+}
+
+button{
+  margin: 10px;
+}
+
+mat-button-toggle{
+  margin: 10px;
+}
