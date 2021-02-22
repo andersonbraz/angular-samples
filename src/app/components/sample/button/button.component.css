@@ -6,6 +6,11 @@ button{
   margin: 10px;
 }
 
-mat-button-toggle{
+.toogle-only mat-button-toggle{
   margin: 10px;
 }
+
+mat-button-toggle-group {
+  margin: 10px;
+}
+
