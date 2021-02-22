@@ -7,6 +7,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatBadgeModule } from '@angular/material/badge';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/template/header/header.component';
@@ -14,6 +15,7 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { TypographyComponent } from './components/sample/typography/typography.component';
 import { ButtonComponent } from './components/sample/button/button.component';
 import { IconComponent } from './components/sample/icon/icon.component';
+import { BadgesComponent } from './components/sample/badges/badges.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { IconComponent } from './components/sample/icon/icon.component';
     FooterComponent,
     TypographyComponent,
     ButtonComponent,
-    IconComponent
+    IconComponent,
+    BadgesComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { IconComponent } from './components/sample/icon/icon.component';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
