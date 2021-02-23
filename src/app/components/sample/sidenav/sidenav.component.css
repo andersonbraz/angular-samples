@@ -12,6 +12,7 @@ mat-sidenav, mat-sidenav-content{
 }
 
 mat-sidenav{
-  /*background-color: lightgoldenrodyellow;*/
+  background-color: #000000;
+  color: #ffffff;
   width: 200px;
 }
