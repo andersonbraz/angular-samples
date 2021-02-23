@@ -24,14 +24,18 @@
   <!-- Template Content Menu -->
 
   <mat-menu #lazyMenu="matMenu">
-    <ng-template matMenuContent>
+    <ng-template matMenuContent let-name="name">
       <button mat-menu-item>Settings</button>
-      <button mat-menu-item>Logout</button>
+      <button mat-menu-item>Log out {{ name }}</button>
     </ng-template>
   </mat-menu>
 
-  <button mat-raised-button [matMenuTriggerFor]="lazyMenu">Options</button>
+  <button mat-raised-button
+  [matMenuTriggerFor]="lazyMenu"
+  [matMenuTriggerData]="{name: 'Anderson'}">Options</button>
   <hr />
-  <button mat-raised-button [matMenuTriggerFor]="lazyMenu">Others</button>
+  <button mat-raised-button
+  [matMenuTriggerFor]="lazyMenu"
+  [matMenuTriggerData]="{name: 'Braz'}">Others</button>
 
 </div>
