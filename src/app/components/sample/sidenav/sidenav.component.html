@@ -1,8 +1,19 @@
 <div class="content">
   <mat-sidenav-container>
-    <mat-sidenav mode="side" [(opened)]="opened" color="primary">Sidenav</mat-sidenav>
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened" color="primary">Sidenav</mat-sidenav>
     <mat-sidenav-content>
-      <button mat-raised-button (click)="opened=!opened"><mat-icon>menu</mat-icon></button>
+      <button mat-raised-button (click)="opened=!opened">
+        <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+        <mat-icon *ngIf="sidenav.opened">menu_open</mat-icon>
+      </button>
+      <hr />
+      <button mat-raised-button (click)="sidenav.open()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <hr />
+      <button mat-raised-button (click)="sidenav.close()">
+        <mat-icon>menu_open</mat-icon>
+      </button>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>

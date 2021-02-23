@@ -22,6 +22,7 @@ import { BadgesComponent } from './components/sample/badges/badges.component';
 import { ProgressSpinnerComponent } from './components/sample/progress-spinner/progress-spinner.component';
 import { ToolbarComponent } from './components/sample/toolbar/toolbar.component';
 import { SidenavComponent } from './components/sample/sidenav/sidenav.component';
+import { MenuComponent } from './components/sample/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { SidenavComponent } from './components/sample/sidenav/sidenav.component'
     BadgesComponent,
     ProgressSpinnerComponent,
     ToolbarComponent,
-    SidenavComponent
+    SidenavComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
