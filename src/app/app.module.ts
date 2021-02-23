@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/template/header/header.component';
@@ -27,6 +28,7 @@ import { ToolbarComponent } from './components/sample/toolbar/toolbar.component'
 import { SidenavComponent } from './components/sample/sidenav/sidenav.component';
 import { MenuComponent } from './components/sample/menu/menu.component';
 import { ListComponent } from './components/sample/list/list.component';
+import { GridComponent } from './components/sample/grid/grid.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ import { ListComponent } from './components/sample/list/list.component';
     ToolbarComponent,
     SidenavComponent,
     MenuComponent,
-    ListComponent
+    ListComponent,
+    GridComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +60,8 @@ import { ListComponent } from './components/sample/list/list.component';
     FormsModule,
     MatMenuModule,
     MatListModule,
-    MatDividerModule
+    MatDividerModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
