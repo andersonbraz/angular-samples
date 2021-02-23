@@ -1,0 +1,14 @@
+.content{
+  padding: 100px 10px 100px 10px;
+}
+
+.wrapper {
+  display: grid;
+  place-items: center;
+  /*height: calc(100vh - 20px); Original Reference */
+  height: calc(100vh - 100px);
+}
+
+.inner {
+  padding: 12px;
+}

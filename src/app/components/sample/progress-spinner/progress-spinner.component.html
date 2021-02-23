@@ -1,1 +1,13 @@
-<p>progress-spinner works!</p>
+<div class="content">
+  <!--
+    <mat-progress-spinner value="60"></mat-progress-spinner>
+  -->
+  <button mat-raised-button (click)="loadData()">Load Data</button>
+  <hr />
+  <div class="wrapper">
+    <div class="inner">
+      <mat-spinner *ngIf="showSpinner"></mat-spinner>
+    </div>
+  </div>
+</div>
+
