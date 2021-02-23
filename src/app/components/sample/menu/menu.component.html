@@ -21,4 +21,17 @@
     <button mat-menu-item>Python</button>
   </mat-menu>
 
+  <!-- Template Content Menu -->
+
+  <mat-menu #lazyMenu="matMenu">
+    <ng-template matMenuContent>
+      <button mat-menu-item>Settings</button>
+      <button mat-menu-item>Logout</button>
+    </ng-template>
+  </mat-menu>
+
+  <button mat-raised-button [matMenuTriggerFor]="lazyMenu">Options</button>
+  <hr />
+  <button mat-raised-button [matMenuTriggerFor]="lazyMenu">Others</button>
+
 </div>
