@@ -1,0 +1,17 @@
+.content {
+  padding: 100px 10px 100px 10px;
+  height: calc(100vh - 200px);
+}
+
+mat-sidenav-container{
+  height: 100%;
+}
+
+mat-sidenav, mat-sidenav-content{
+  padding: 20px;
+}
+
+mat-sidenav{
+  /*background-color: lightgoldenrodyellow;*/
+  width: 200px;
+}

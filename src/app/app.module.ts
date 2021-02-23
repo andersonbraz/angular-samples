@@ -9,6 +9,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/template/header/header.component';
@@ -19,6 +21,7 @@ import { IconComponent } from './components/sample/icon/icon.component';
 import { BadgesComponent } from './components/sample/badges/badges.component';
 import { ProgressSpinnerComponent } from './components/sample/progress-spinner/progress-spinner.component';
 import { ToolbarComponent } from './components/sample/toolbar/toolbar.component';
+import { SidenavComponent } from './components/sample/sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,8 @@ import { ToolbarComponent } from './components/sample/toolbar/toolbar.component'
     IconComponent,
     BadgesComponent,
     ProgressSpinnerComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +45,9 @@ import { ToolbarComponent } from './components/sample/toolbar/toolbar.component'
     MatButtonModule,
     MatButtonToggleModule,
     MatBadgeModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatSidenavModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
