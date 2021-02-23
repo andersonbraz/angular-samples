@@ -12,4 +12,19 @@
   <div><span matBadge="5" matBadgeColor="primary">Notifications</span></div>
   <div><span matBadge="5" matBadgeColor="accent">Notifications</span></div>
   <div><span matBadge="5" matBadgeColor="warn">Notifications</span></div>
+  <hr />
+  <div><span [matBadge]="notifications" matBadgeColor="primary" matBadgeOverlap="false">Notifications</span></div>
+  <div><span [matBadge]="notifications" matBadgeColor="accent" matBadgeOverlap="false">Notifications</span></div>
+  <div><span [matBadge]="notifications" matBadgeColor="warn" matBadgeOverlap="false">Notifications</span></div>
+  <hr />
+  <div><span [matBadge]="errors" matBadgeSize="large" matBadgeColor="warn" matBadgeOverlap="false">Errors</span></div>
+  <div>
+    <span [matBadge]="errors"
+          matBadgeSize="large"
+          matBadgeColor="warn"
+          matBadgeOverlap="false"
+          [matBadgeHidden]="errors===0">
+          Errors
+    </span>
+  </div>
 </div>

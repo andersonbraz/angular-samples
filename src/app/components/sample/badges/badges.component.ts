@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BadgesComponent implements OnInit {
 
-  constructor() { }
+  notifications = 2;
+  errors = 0;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
