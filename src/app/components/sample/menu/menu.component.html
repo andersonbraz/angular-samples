@@ -1,1 +1,24 @@
-<p>menu works!</p>
+<div class="content">
+
+  <mat-menu #appMenu="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="subMenuFrontend">Frontend</button>
+    <button mat-menu-item [matMenuTriggerFor]="subMenuBackend">Backend</button>
+  </mat-menu>
+
+  <button mat-flat-button [matMenuTriggerFor]="appMenu">Menu</button>
+
+  <hr />
+
+  <mat-menu #subMenuFrontend="matMenu">
+    <button mat-menu-item>Angular</button>
+    <button mat-menu-item>React</button>
+    <button mat-menu-item>Vue</button>
+  </mat-menu>
+
+  <mat-menu #subMenuBackend="matMenu">
+    <button mat-menu-item>C#</button>
+    <button mat-menu-item>Java</button>
+    <button mat-menu-item>Python</button>
+  </mat-menu>
+
+</div>
