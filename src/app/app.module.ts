@@ -18,6 +18,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatStepperModule } from '@angular/material/stepper';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/template/header/header.component';
@@ -35,6 +36,7 @@ import { GridComponent } from './components/sample/grid/grid.component';
 import { ExpansionComponent } from './components/sample/expansion/expansion.component';
 import { CardComponent } from './components/sample/card/card.component';
 import { TabsComponent } from './components/sample/tabs/tabs.component';
+import { StepperComponent } from './components/sample/stepper/stepper.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,8 @@ import { TabsComponent } from './components/sample/tabs/tabs.component';
     GridComponent,
     ExpansionComponent,
     CardComponent,
-    TabsComponent
+    TabsComponent,
+    StepperComponent
   ],
   imports: [
     BrowserModule,
@@ -73,7 +76,8 @@ import { TabsComponent } from './components/sample/tabs/tabs.component';
     MatGridListModule,
     MatExpansionModule,
     MatCardModule,
-    MatTabsModule
+    MatTabsModule,
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
