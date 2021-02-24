@@ -17,6 +17,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatCardModule } from '@angular/material/card';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/template/header/header.component';
@@ -33,6 +34,7 @@ import { ListComponent } from './components/sample/list/list.component';
 import { GridComponent } from './components/sample/grid/grid.component';
 import { ExpansionComponent } from './components/sample/expansion/expansion.component';
 import { CardComponent } from './components/sample/card/card.component';
+import { TabsComponent } from './components/sample/tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,8 @@ import { CardComponent } from './components/sample/card/card.component';
     ListComponent,
     GridComponent,
     ExpansionComponent,
-    CardComponent
+    CardComponent,
+    TabsComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +72,8 @@ import { CardComponent } from './components/sample/card/card.component';
     MatDividerModule,
     MatGridListModule,
     MatExpansionModule,
-    MatCardModule
+    MatCardModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
