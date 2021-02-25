@@ -1,0 +1,25 @@
+<div class="content">
+  <form>
+
+    <mat-form-field>
+      <input type="text" matInput [matAutocomplete]="autoSimple">
+      <mat-autocomplete #autoSimple="matAutocomplete">
+        <mat-option *ngFor="let option of options" [value]="option">
+          {{ option }}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+
+    <mat-divider></mat-divider>
+
+    <mat-form-field>
+      <input type="text" matInput [matAutocomplete]="autoComplex">
+      <mat-autocomplete #autoComplex="matAutocomplete" [displayWith]="displayFn">
+        <mat-option *ngFor="let option of objOptions" [value]="option">
+          {{ option.name }}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+
+  </form>
+</div>

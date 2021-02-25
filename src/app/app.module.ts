@@ -21,6 +21,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 
 import { AppComponent } from './app.component';
@@ -41,6 +42,7 @@ import { CardComponent } from './components/sample/card/card.component';
 import { TabsComponent } from './components/sample/tabs/tabs.component';
 import { StepperComponent } from './components/sample/stepper/stepper.component';
 import { InputComponent } from './components/sample/input/input.component';
+import { AutocompleteComponent } from './components/sample/autocomplete/autocomplete.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +63,8 @@ import { InputComponent } from './components/sample/input/input.component';
     CardComponent,
     TabsComponent,
     StepperComponent,
-    InputComponent
+    InputComponent,
+    AutocompleteComponent
   ],
   imports: [
     BrowserModule,
@@ -84,7 +87,8 @@ import { InputComponent } from './components/sample/input/input.component';
     MatTabsModule,
     MatStepperModule,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    MatAutocompleteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
