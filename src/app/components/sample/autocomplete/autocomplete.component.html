@@ -13,10 +13,21 @@
     <mat-divider></mat-divider>
 
     <mat-form-field>
-      <input type="text" matInput [matAutocomplete]="autoComplex">
+      <input type="text" matInput [matAutocomplete]="autoComplex" [formControl]="myControl" />
       <mat-autocomplete #autoComplex="matAutocomplete" [displayWith]="displayFn">
         <mat-option *ngFor="let option of objOptions" [value]="option">
           {{ option.name }}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+
+    <mat-divider></mat-divider>
+
+    <mat-form-field>
+      <input type="text" matInput [matAutocomplete]="autoFilter" [formControl]="myControl" />
+      <mat-autocomplete #autoFilter="matAutocomplete" [displayWith]="displayFn">
+        <mat-option *ngFor="let option of filterOptions | async" [value]="option">
+          {{ option }}
         </mat-option>
       </mat-autocomplete>
     </mat-form-field>
