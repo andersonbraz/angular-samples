@@ -19,6 +19,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatStepperModule } from '@angular/material/stepper';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/template/header/header.component';
@@ -37,6 +40,7 @@ import { ExpansionComponent } from './components/sample/expansion/expansion.comp
 import { CardComponent } from './components/sample/card/card.component';
 import { TabsComponent } from './components/sample/tabs/tabs.component';
 import { StepperComponent } from './components/sample/stepper/stepper.component';
+import { InputComponent } from './components/sample/input/input.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +60,8 @@ import { StepperComponent } from './components/sample/stepper/stepper.component'
     ExpansionComponent,
     CardComponent,
     TabsComponent,
-    StepperComponent
+    StepperComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,
@@ -77,7 +82,9 @@ import { StepperComponent } from './components/sample/stepper/stepper.component'
     MatExpansionModule,
     MatCardModule,
     MatTabsModule,
-    MatStepperModule
+    MatStepperModule,
+    MatInputModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

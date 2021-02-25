@@ -1,0 +1,98 @@
+<div class="content">
+  <!--
+  <div class="box">
+    <mat-form-field floatLabel="auto">
+      <mat-label>Name</mat-label>
+      <input matInput>
+    </mat-form-field>
+  </div>
+
+  <div class="box">
+    <mat-form-field floatLabel="always">
+      <mat-label>Name</mat-label>
+      <input matInput>
+    </mat-form-field>
+  </div>
+
+  <div class="box">
+    <mat-form-field floatLabel="never">
+      <mat-label>Name</mat-label>
+      <input matInput>
+    </mat-form-field>
+  </div>
+-->
+  <div class="box">
+    <mat-form-field floatLabel="auto" hideRequiredMarker appearance="legacy">
+      <mat-label>Name</mat-label>
+      <input matInput required>
+      <mat-hint align="end">Min 5 characters</mat-hint>
+    </mat-form-field>
+  </div>
+
+  <div class="box">
+    <mat-form-field floatLabel="auto" hideRequiredMarker appearance="standard">
+      <mat-label>Name</mat-label>
+      <input matInput required>
+      <mat-hint align="end">Min 5 characters</mat-hint>
+    </mat-form-field>
+  </div>
+
+  <div class="box">
+    <mat-form-field floatLabel="auto" hideRequiredMarker appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput required>
+      <mat-hint align="end">Min 5 characters</mat-hint>
+    </mat-form-field>
+  </div>
+
+  <div class="box">
+    <mat-form-field floatLabel="auto" hideRequiredMarker appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput required>
+      <mat-hint align="end">Min 5 characters</mat-hint>
+    </mat-form-field>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <div class="box">
+    <mat-form-field appearance="fill">
+      <mat-select #optTopic>
+        <mat-label>Topic</mat-label>
+        <mat-option>None</mat-option>
+        <mat-option value="angular">Angular</mat-option>
+        <mat-option value="react">React</mat-option>
+        <mat-option value="vue">Vue</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="box">
+    Option: {{ optTopic.value }}
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <div class="box">
+    <mat-form-field appearance="fill">
+      <mat-select #optTopics multiple>
+        <mat-label>Topic</mat-label>
+        <mat-optgroup label="Frontend">
+          <mat-option value="angular">Angular</mat-option>
+          <mat-option value="react">React</mat-option>
+          <mat-option value="vue">Vue</mat-option>
+        </mat-optgroup>
+        <mat-optgroup label="Backend">
+          <mat-option value="csharp">C#</mat-option>
+          <mat-option value="java">Java</mat-option>
+          <mat-option value="python">Python</mat-option>
+        </mat-optgroup>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="box">
+    Option(s): {{ optTopics.value }}
+  </div>
+
+</div>
