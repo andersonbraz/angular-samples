@@ -26,7 +26,7 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { TypographyComponent } from './components/sample/typography/typography.component';
 import { ButtonComponent } from './components/sample/button/button.component';
 import { IconComponent } from './components/sample/icon/icon.component';
-import { BadgesComponent } from './components/sample/badges/badges.component';
+import { BadgeComponent } from './components/sample/badge/badge.component';
 import { ProgressSpinnerComponent } from './components/sample/progress-spinner/progress-spinner.component';
 import { ToolbarComponent } from './components/sample/toolbar/toolbar.component';
 import { SidenavComponent } from './components/sample/sidenav/sidenav.component';
@@ -46,7 +46,7 @@ import { StepperComponent } from './components/sample/stepper/stepper.component'
     TypographyComponent,
     ButtonComponent,
     IconComponent,
-    BadgesComponent,
+    BadgeComponent,
     ProgressSpinnerComponent,
     ToolbarComponent,
     SidenavComponent,
