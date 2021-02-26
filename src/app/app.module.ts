@@ -25,6 +25,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/template/header/header.component';
@@ -46,6 +47,7 @@ import { StepperComponent } from './components/sample/stepper/stepper.component'
 import { InputComponent } from './components/sample/input/input.component';
 import { AutocompleteComponent } from './components/sample/autocomplete/autocomplete.component';
 import { CheckboxComponent } from './components/sample/checkbox/checkbox.component';
+import { DatepickerComponent } from './components/sample/datepicker/datepicker.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +70,8 @@ import { CheckboxComponent } from './components/sample/checkbox/checkbox.compone
     StepperComponent,
     InputComponent,
     AutocompleteComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    DatepickerComponent
   ],
   imports: [
     BrowserModule,
@@ -95,7 +98,8 @@ import { CheckboxComponent } from './components/sample/checkbox/checkbox.compone
     MatSelectModule,
     MatAutocompleteModule,
     MatCheckboxModule,
-    MatRadioModule
+    MatRadioModule,
+    MatDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
