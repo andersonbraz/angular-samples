@@ -29,6 +29,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/template/header/header.component';
@@ -53,6 +54,8 @@ import { CheckboxComponent } from './components/sample/checkbox/checkbox.compone
 import { DatepickerComponent } from './components/sample/datepicker/datepicker.component';
 import { TooltipComponent } from './components/sample/tooltip/tooltip.component';
 import { SnackbarComponent } from './components/sample/snackbar/snackbar.component';
+import { DialogComponent } from './components/sample/dialog/dialog.component';
+import { DialogMessageComponent } from './components/sample/dialog-message/dialog-message.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +81,9 @@ import { SnackbarComponent } from './components/sample/snackbar/snackbar.compone
     CheckboxComponent,
     DatepickerComponent,
     TooltipComponent,
-    SnackbarComponent
+    SnackbarComponent,
+    DialogComponent,
+    DialogMessageComponent,
   ],
   imports: [
     BrowserModule,
@@ -109,13 +114,14 @@ import { SnackbarComponent } from './components/sample/snackbar/snackbar.compone
     MatDatepickerModule,
     MatNativeDateModule,
     MatTooltipModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatDialogModule
   ],
   providers: [
-    { provide: LOCALE_ID, useValue: "pt-BR" },
-    { provide: DEFAULT_CURRENCY_CODE, useValue: "BRL" },
+    { provide: LOCALE_ID, useValue: 'pt-BR' },
+    { provide: DEFAULT_CURRENCY_CODE, useValue: 'BRL' },
     { provide: MAT_DATE_LOCALE, useValue: 'pt-BR' },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
