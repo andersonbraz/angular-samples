@@ -28,6 +28,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/template/header/header.component';
@@ -51,6 +52,7 @@ import { AutocompleteComponent } from './components/sample/autocomplete/autocomp
 import { CheckboxComponent } from './components/sample/checkbox/checkbox.component';
 import { DatepickerComponent } from './components/sample/datepicker/datepicker.component';
 import { TooltipComponent } from './components/sample/tooltip/tooltip.component';
+import { SnackbarComponent } from './components/sample/snackbar/snackbar.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +77,8 @@ import { TooltipComponent } from './components/sample/tooltip/tooltip.component'
     AutocompleteComponent,
     CheckboxComponent,
     DatepickerComponent,
-    TooltipComponent
+    TooltipComponent,
+    SnackbarComponent
   ],
   imports: [
     BrowserModule,
@@ -105,7 +108,8 @@ import { TooltipComponent } from './components/sample/tooltip/tooltip.component'
     MatRadioModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatSnackBarModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: "pt-BR" },
