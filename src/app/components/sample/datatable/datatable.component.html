@@ -2,16 +2,7 @@
   <div class="space">
     <h2>Simple Table With Filter</h2>
     <mat-divider></mat-divider>
-    <mat-form-field>
-      <input
-        #textFilter
-        matInput
-        placeholder="Filter"
-        (keyup)="applyFilter(textFilter.value)"
-      />
-    </mat-form-field>
-
-    <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+    <table mat-table [dataSource]="elements" matSort class="mat-elevation-z8">
       <!-- Position Column -->
       <ng-container matColumnDef="position">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>No.</th>
@@ -39,8 +30,5 @@
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
     </table>
-    <mat-paginator [pageSizeOptions]="[5, 10, 20]"> </mat-paginator>
-    <mat-divider></mat-divider>
-    <button mat-raised-button>Debug</button>
   </div>
 </div>
