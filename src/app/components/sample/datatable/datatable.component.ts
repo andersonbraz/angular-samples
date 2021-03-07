@@ -1,3 +1,4 @@
+import { DataSource } from '@angular/cdk/collections';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
@@ -10,20 +11,32 @@ import { ElementService } from './element/element.service';
   styleUrls: ['./datatable.component.css'],
 })
 export class DatatableComponent implements OnInit {
+
   elements: Element[] = [];
-  displayedColumns: string[] = ['position', 'name', 'atomic_mass', 'symbol'];
+
+  displayedColumns: string[] = [
+    'position',
+    'name',
+    'atomic_mass',
+    'symbol',
+    'phase',
+    'density',
+    'discovered_by',
+  ];
 
   constructor(private elementService: ElementService) {}
+  dataSource: MatTableDataSource<Element>;
+  @ViewChild(MatSort, { static: false }) sort: MatSort;
 
   ngOnInit(): void {
     this.elementService.getElements().subscribe((elements) => {
       this.elements = elements;
-      console.log(elements);
+      this.dataSource = new MatTableDataSource(this.elements);
+      this.dataSource.sort = this.sort;
     });
   }
 
   logData(row: object): void {
     console.log(row);
   }
-
 }
