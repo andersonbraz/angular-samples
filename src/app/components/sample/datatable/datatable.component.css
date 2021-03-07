@@ -1,0 +1,15 @@
+.content{
+    padding: 100px 10px 100px 10px;
+}
+
+table {
+  width: 100%;
+}
+
+.space{
+  margin-bottom: 25px;
+}
+
+mat-divider{
+  margin-bottom: 10px;
+}

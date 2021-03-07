@@ -30,6 +30,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/template/header/header.component';
@@ -56,6 +58,7 @@ import { TooltipComponent } from './components/sample/tooltip/tooltip.component'
 import { SnackbarComponent } from './components/sample/snackbar/snackbar.component';
 import { DialogComponent } from './components/sample/dialog/dialog.component';
 import { DialogMessageComponent } from './components/sample/dialog-message/dialog-message.component';
+import { DatatableComponent } from './components/sample/datatable/datatable.component';
 
 @NgModule({
   declarations: [
@@ -84,6 +87,7 @@ import { DialogMessageComponent } from './components/sample/dialog-message/dialo
     SnackbarComponent,
     DialogComponent,
     DialogMessageComponent,
+    DatatableComponent,
   ],
   imports: [
     BrowserModule,
@@ -115,7 +119,9 @@ import { DialogMessageComponent } from './components/sample/dialog-message/dialo
     MatNativeDateModule,
     MatTooltipModule,
     MatSnackBarModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTableModule,
+    MatSortModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt-BR' },
