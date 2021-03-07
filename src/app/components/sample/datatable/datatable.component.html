@@ -1,7 +1,18 @@
 <div class="content">
   <div class="space">
-    <h2>Simple Table With Filter</h2>
+    <h2>Example Data-table</h2>
+
     <mat-divider></mat-divider>
+
+    <mat-form-field>
+      <input
+        #textFilter
+        matInput
+        placeholder="Filter"
+        (keyup)="applyFilter(textFilter.value)"
+      />
+    </mat-form-field>
+
     <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
       <!-- Position Column -->
       <ng-container matColumnDef="position">
@@ -39,14 +50,17 @@
         <td mat-cell *matCellDef="let element">{{ element.density }}</td>
       </ng-container>
 
-      <!-- Discovered by Column -->
+      <!-- Discovered By Column -->
       <ng-container matColumnDef="discovered_by">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Discovered by</th>
         <td mat-cell *matCellDef="let element">{{ element.discovered_by }}</td>
       </ng-container>
-      
+
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
     </table>
+    <mat-paginator
+          [pageSizeOptions]="[ 25, 50, 100]">
+    </mat-paginator>
   </div>
 </div>
