@@ -2,6 +2,7 @@ import { NgModule, LOCALE_ID, DEFAULT_CURRENCY_CODE } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -59,6 +60,7 @@ import { SnackbarComponent } from './components/sample/snackbar/snackbar.compone
 import { DialogComponent } from './components/sample/dialog/dialog.component';
 import { DialogMessageComponent } from './components/sample/dialog-message/dialog-message.component';
 import { DatatableComponent } from './components/sample/datatable/datatable.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -94,6 +96,7 @@ import { DatatableComponent } from './components/sample/datatable/datatable.comp
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule,
     MatToolbarModule,
     MatIconModule,
@@ -121,7 +124,8 @@ import { DatatableComponent } from './components/sample/datatable/datatable.comp
     MatSnackBarModule,
     MatDialogModule,
     MatTableModule,
-    MatSortModule
+    MatSortModule,
+    MatPaginatorModule,
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt-BR' },
