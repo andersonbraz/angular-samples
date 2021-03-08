@@ -1,0 +1,12 @@
+<app-header></app-header>
+<mat-drawer-container class="guide-container" autosize>
+  <mat-drawer #drawerMenu class="guide-sidenav" mode="over">
+
+  </mat-drawer>
+
+  <div class="guide-sidenav-content">
+    <button type="button" mat-raised-button (click)="drawerMenu.toggle()">
+      See Samples
+    </button>
+  </div>
+</mat-drawer-container>

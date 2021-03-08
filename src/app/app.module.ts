@@ -61,6 +61,7 @@ import { DialogComponent } from './components/sample/dialog/dialog.component';
 import { DialogMessageComponent } from './components/sample/dialog-message/dialog-message.component';
 import { DatatableComponent } from './components/sample/datatable/datatable.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { GuideComponent } from './components/template/guide/guide.component';
 
 @NgModule({
   declarations: [
@@ -90,6 +91,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     DialogComponent,
     DialogMessageComponent,
     DatatableComponent,
+    GuideComponent,
   ],
   imports: [
     BrowserModule,
