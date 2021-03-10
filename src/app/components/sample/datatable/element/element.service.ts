@@ -11,12 +11,14 @@ export class ElementService {
   constructor(private snackBar: MatSnackBar, private httpClient: HttpClient) {}
 
   getElements(): Observable<Element[]> {
+
     return this.httpClient
       .get<Element[]>('assets/data/periodic-table.json')
       .pipe(
         map((obj) => obj),
         catchError((e) => this.errorHandler(e))
       );
+
   }
 
   showMessage(msg: string, isError: boolean = false): void {

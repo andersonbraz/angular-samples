@@ -29,8 +29,9 @@ export class DatatableComponent implements OnInit {
   @ViewChild(MatPaginator, { static: false }) paginator: MatPaginator;
 
   ngOnInit(): void {
-    this.elementService.getElements().subscribe((elements) => {
-      this.elements = elements;
+    this.elementService.getElements().subscribe((elements: any) => {
+      this.elements = elements.data;
+      console.log(this.elements);
       this.dataSource = new MatTableDataSource(this.elements);
       this.dataSource.sort = this.sort;
       this.dataSource.paginator = this.paginator;
