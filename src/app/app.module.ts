@@ -35,8 +35,6 @@ import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/template/header/header.component';
-import { FooterComponent } from './components/template/footer/footer.component';
 import { TypographyComponent } from './components/sample/typography/typography.component';
 import { ButtonComponent } from './components/sample/button/button.component';
 import { IconComponent } from './components/sample/icon/icon.component';
@@ -66,8 +64,6 @@ import { GuideComponent } from './components/template/guide/guide.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
     TypographyComponent,
     ButtonComponent,
     IconComponent,
