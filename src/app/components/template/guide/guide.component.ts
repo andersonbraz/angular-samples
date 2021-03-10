@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./guide.component.css'],
 })
 export class GuideComponent implements OnInit {
-  showFiller = true;
 
   constructor() {}
 
