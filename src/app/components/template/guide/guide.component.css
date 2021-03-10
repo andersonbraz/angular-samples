@@ -11,6 +11,14 @@
   justify-content: center;
 }
 
-.guide-sidenav {
-  padding: 20px;
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .icon {
+  padding-right: 10px;
+}
+
+.link-guide {
+  height: 200px;
 }
